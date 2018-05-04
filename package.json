@@ -1,0 +1,28 @@
+{
+  "name": "react-helpers",
+  "version": "1.0.0",
+  "description": "A collection of helpers for ReactJS components",
+  "repository": "git@github.com:cryptocurrencytrader/react-helpers.git",
+  "author": "Rafael Tavares <rafael@tavares.email>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "run-publish": "tslint -c tslint.json 'src/**/*.ts' && rimraf .publishing && tsc --outDir .publishing && copy package.json .publishing && copy README.md .publishing && npm publish .publishing",
+    "test": "tslint -c tslint.json 'src/**/*.ts' && tsc"
+  },
+  "dependencies": {
+    "@types/react": "^16.3.13",
+    "hoist-non-react-statics": "^2.5.0",
+    "react-display-name": "^0.2.4",
+    "tslib": "^1.9.0"
+  },
+  "devDependencies": {
+    "copy": "^0.3.1",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.3.0"
+  }
+}
