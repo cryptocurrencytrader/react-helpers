@@ -9,7 +9,7 @@ const defaultPropName = "context";
 export type ConsumerHOCProps<P, I extends string, T> = P & Record<I, T>;
 
 export default function createConsumerHOC<T>(
-  Consumer: ReturnType<typeof React.createContext>["Consumer"],
+  Consumer: React.Consumer<T>,
   name: string = "Consumer",
 ) {
   return <I extends string = typeof defaultPropName>(
