@@ -1,6 +1,6 @@
 {
   "name": "@bitcointrade/react-helpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of helpers for ReactJS components",
   "repository": "git@github.com:cryptocurrencytrader/react-helpers.git",
   "author": "Rafael Tavares <rafael@tavares.email>",
